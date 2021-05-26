@@ -26,6 +26,7 @@ const userSlice = createSlice({
 
 export const { setUserLoginDetails, setSignOutState } = userSlice.actions;
 
+// This the way to access the state objects in redux store
 export const selectUserName = (state) => state.user.name;
 export const selectUserEmail = (state) => state.user.email;
 export const selectUserPhoto = (state) => state.user.photo;
