@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+// video component behind the card 
+
 const Viewers = (props) => {
   return (
     <Container>
