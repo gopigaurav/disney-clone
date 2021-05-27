@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/disney-clone/static/css/main.2dacb072.chunk.css",
-    "main.js": "/disney-clone/static/js/main.69c22454.chunk.js",
-    "main.js.map": "/disney-clone/static/js/main.69c22454.chunk.js.map",
+    "main.js": "/disney-clone/static/js/main.cb5505f0.chunk.js",
+    "main.js.map": "/disney-clone/static/js/main.cb5505f0.chunk.js.map",
     "runtime-main.js": "/disney-clone/static/js/runtime-main.0e6f3279.js",
     "runtime-main.js.map": "/disney-clone/static/js/runtime-main.0e6f3279.js.map",
     "static/css/2.d97b6167.chunk.css": "/disney-clone/static/css/2.d97b6167.chunk.css",
-    "static/js/2.2c02e0cd.chunk.js": "/disney-clone/static/js/2.2c02e0cd.chunk.js",
-    "static/js/2.2c02e0cd.chunk.js.map": "/disney-clone/static/js/2.2c02e0cd.chunk.js.map",
+    "static/js/2.95f15cfa.chunk.js": "/disney-clone/static/js/2.95f15cfa.chunk.js",
+    "static/js/2.95f15cfa.chunk.js.map": "/disney-clone/static/js/2.95f15cfa.chunk.js.map",
     "index.html": "/disney-clone/index.html",
     "static/css/2.d97b6167.chunk.css.map": "/disney-clone/static/css/2.d97b6167.chunk.css.map",
     "static/css/main.2dacb072.chunk.css.map": "/disney-clone/static/css/main.2dacb072.chunk.css.map",
-    "static/js/2.2c02e0cd.chunk.js.LICENSE.txt": "/disney-clone/static/js/2.2c02e0cd.chunk.js.LICENSE.txt",
+    "static/js/2.95f15cfa.chunk.js.LICENSE.txt": "/disney-clone/static/js/2.95f15cfa.chunk.js.LICENSE.txt",
     "static/media/slick-theme.css": "/disney-clone/static/media/slick.c94f7671.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.0e6f3279.js",
     "static/css/2.d97b6167.chunk.css",
-    "static/js/2.2c02e0cd.chunk.js",
+    "static/js/2.95f15cfa.chunk.js",
     "static/css/main.2dacb072.chunk.css",
-    "static/js/main.69c22454.chunk.js"
+    "static/js/main.cb5505f0.chunk.js"
   ]
 }
