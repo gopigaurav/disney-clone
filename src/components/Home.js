@@ -5,11 +5,12 @@ import Originals from "./Originals";
 import Recommends from "./Recommends";
 import Trending from "./Trending";
 import Viewers from "./Viewers";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import db from "../firebase";
 import { setMovies } from "../features/movie/movieSlice";
 import { selectUserName } from "../features/user/userSlice";
+import dataMovies from "../disneyPlusMoviesData.json";
 
 const Home = (props) => {
   const dispatch = useDispatch();
@@ -18,12 +19,13 @@ const Home = (props) => {
   let newDisneys = [];
   let originals = [];
   let trending = [];
+  const [data,setData] = useState(dataMovies.movies);
 
   useEffect(() => {
-    console.log("hello");
+    console.log(data)
+
     db.collection("movies").onSnapshot((snapshot) => {
       snapshot.docs.map((doc) => {
-        console.log(recommends);
         switch (doc.data().type) {
           case "recommend":
             recommends = [...recommends, { id: doc.id, ...doc.data() }];
@@ -56,12 +58,12 @@ const Home = (props) => {
 
   return (
     <Container>
-      <ImgSlider />
-      <Viewers />
-      <Recommends />
-      <NewDisney />
-      <Originals />
-      <Trending />
+      <ImgSlider data={data}/>
+      <Viewers data={data}/>
+      <Recommends data={data}/>
+      <NewDisney data={data}/>
+      <Originals data={data}/>
+      <Trending data={data}/>
     </Container>
   );
 };

@@ -5,13 +5,13 @@ import firebase from "firebase";
 // for that just use auth.signInWithPopUp
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA9BnlX96fMf7XiUVCFRsoQzG8DGERJkeY",
-  authDomain: "disneyplus-clone-a33d5.firebaseapp.com",
-  projectId: "disneyplus-clone-a33d5",
-  storageBucket: "disneyplus-clone-a33d5.appspot.com",
-  messagingSenderId: "37918794208",
-  appId: "1:37918794208:web:dbe9842dfe1dda522a4b85",
-  measurementId: "G-DRVLJKWRWG",
+  apiKey: "AIzaSyC_Ntb63mmkmt68qyu3voqxMTFHYYViqf4",
+  authDomain: "disneyplus-clone-ab2e1.firebaseapp.com",
+  projectId: "disneyplus-clone-ab2e1",
+  storageBucket: "disneyplus-clone-ab2e1.appspot.com",
+  messagingSenderId: "1044620405610",
+  appId: "1:1044620405610:web:67516912bd989a39f6d313",
+  measurementId: "G-P2TSLY3EZQ"
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);

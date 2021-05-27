@@ -2,8 +2,12 @@ import styled from "styled-components";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import React, { useEffect } from "react";
 
 const ImgSlider = (props) => {
+  useEffect(() => {
+    console.log(props.data);
+  }, []);
   let settings = {
     dots: true,
     infinite: true,
@@ -14,29 +18,13 @@ const ImgSlider = (props) => {
   };
   return (
     <Carousel {...settings}>
-      <Wrap>
-        <a>
-          <img src="/images/slider-badging.jpg" alt="" />
-        </a>
-      </Wrap>
-
-      <Wrap>
-        <a>
-          <img src="/images/slider-scale.jpg" alt="" />
-        </a>
-      </Wrap>
-
-      <Wrap>
-        <a>
-          <img src="/images/slider-badag.jpg" alt="" />
-        </a>
-      </Wrap>
-
-      <Wrap>
-        <a>
-          <img src="/images/slider-scales.jpg" alt="" />
-        </a>
-      </Wrap>
+      {props.data.slice(0, 5).map((data) => (
+        <Wrap>
+          <a>
+            <img src={data.backgroundImg} alt="" />
+          </a>
+        </Wrap>
+      ))}
     </Carousel>
   );
 };
